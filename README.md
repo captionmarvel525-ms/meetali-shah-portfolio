@@ -34,7 +34,9 @@ I'm Meetali Shah, a first-year CSE (AI & ML) student at SRM Institute of Science
 - French Topper — Ranked first in French, Grade 11
 
 ## 📂 How to Run Locally
-https://github.com/captionmarvel525-ms/meetali-shah-portfolio.git
+1. Clone the repo:https://github.com/captionmarvel525-ms/meetali-shah-portfolio.git
+
+
 
 ## 📬 Contact
 - Email: meetalis525@gmail.com
