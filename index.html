@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meetali Shah — Portfolio</title>
+
+  <!-- Google Fonts: a serif for headings (Fraunces) + a clean sans for body text (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       This stays fixed at the top. On mobile, the
+       links collapse behind a hamburger button
+       (handled in script.js).
+  ============================================ -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="nav-brand">MS</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================================
+         HERO — the first thing anyone sees.
+    ============================================ -->
+    <section class="hero" id="hero">
+      <!-- Constellation network — drawn and animated by script.js using three.js.
+           Purely decorative, so it's hidden from screen readers and never
+           blocks clicks on the text/buttons above it. -->
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+        <div class="photo-tilt" id="photoTilt">
+          <span class="photo-glow" aria-hidden="true"></span>
+          <img src="profile.jpg" alt="Photo of Meetali Shah" class="hero-photo" />
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">Building things at the edge of software and machine learning.</h1>
+          <p class="hero-sub">
+            I'm <strong>Meetali Shah</strong>, a first-year CSE (AI &amp; ML) student at
+            SRM Institute of Science and Technology, interested in problem solving and
+            web development with AI.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">See my projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT ME
+    ============================================ -->
+    <section class="section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="section-body">
+        <p>
+          I'm a first-year Computer Science (AI &amp; ML) student at SRM Institute of
+          Science and Technology. I enjoy problem solving and I'm exploring web
+          development with AI — outside of that, I'm into maths, music, and picking
+          up new things whenever I can.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS
+    ============================================ -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-groups">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Languages</h3>
+          <ul class="tag-list">
+            <li class="tag">Python (basics)</li>
+            <li class="tag">C (basics)</li>
+            <li class="tag">HTML &amp; CSS</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Other skills</h3>
+          <ul class="tag-list">
+            <li class="tag">Presentation making</li>
+            <li class="tag">VS Code</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Currently learning</h3>
+          <ul class="tag-list">
+            <li class="tag">Web development</li>
+            <li class="tag">Machine Learning basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS
+         Copy one "project-row" block per project.
+    ============================================ -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-list">
+
+        <article class="project-row tilt-card">
+          <div class="project-info">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">This site — built from scratch with HTML, CSS, and JavaScript to showcase my profile, skills, and projects.</p>
+            <div class="tag-list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <a href="https://github.com/captionmarvel525-ms" class="project-link" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         ACHIEVEMENTS
+    ============================================ -->
+    <section class="section" id="achievements">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="achievement-list">
+        <li class="achievement-item tilt-card">
+          <h3 class="achievement-title">Maths Topper</h3>
+          <p class="achievement-desc">Ranked first in Mathematics — Grade 12</p>
+        </li>
+        <li class="achievement-item tilt-card">
+          <h3 class="achievement-title">French Topper</h3>
+          <p class="achievement-desc">Ranked first in French — Grade 11</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================================
+         CONTACT
+    ============================================ -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">Have a project in mind, or just want to say hi? Reach me here:</p>
+      <div class="contact-links">
+        <a href="mailto:meetalis525@gmail.com" class="contact-link">meetalis525@gmail.com</a>
+        <a href="https://github.com/captionmarvel525-ms" class="contact-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/meetali-shah" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Meetali Shah. Built from scratch.</p>
+  </footer>
+
+  <!-- three.js powers the constellation network in the hero (see script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
